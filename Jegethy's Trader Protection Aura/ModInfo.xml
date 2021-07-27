@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Jegethy's Trader Protection Aura Mod" />
+		<Description value="Traders provide a protective aura to players within their vicinty" />
+		<Author value="Jegethy" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>

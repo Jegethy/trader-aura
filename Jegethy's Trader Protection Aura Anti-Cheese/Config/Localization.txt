@@ -1,0 +1,5 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+buffTraderProtectionEffectTooltip,buffs,Buff,New,"[60CCFF]A nearby trader is protecting you from harm",,,,,
+buffTraderProtectionEffectNameShort,buffs,Buff,New,"[60CCFF]     Protected",,,,,
+buffTraderProtectionEffectName,buffs,Buff,New,"[60CCFF]Guardian Angel",,,,,
+buffTraderProtectionEffectDesc,buffs,Buff,New,"[60CCFF]A nearby trader has bestowed their protection upon you, granting you temporary invulnerabilty and resistance to debuffs while in their vicinity.",,,,,

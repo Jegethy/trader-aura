@@ -1,0 +1,33 @@
+<configs>
+
+	<append xpath="/buffs">
+		<buff name="buffTraderProtectionStarter">
+			<stack_type value="ignore"/>
+			<duration value="200000000000"/>
+			<update_rate value=".2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="buffTraderProtectionEffect">
+					<requirement name="EntityTagCompare" target="other" tags="player,zombie"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+
+		<buff name="buffTraderProtectionEffect" name_key="buffTraderProtectionEffectName" description_key="buffTraderProtectionEffectDesc" tooltip_key="buffTraderProtectionEffectTooltip" icon="traderprotection">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+			<display_value_key value="buffTraderProtectionEffectNameShort"/> <display_value value="xxx"/>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="melee,ranged,tool,weapon" />
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="200" tags="cold,heat,electrical"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="200"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="200" tags="coredamageresist"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="200" tags="heat,electrical"/>
+				<passive_effect name="HealthLoss" operation="base_set" value="0"/>
+				<passive_effect name="HealthLoss" operation="perc_set" value="0"/>
+				<passive_effect name="HealthLoss" operation="perc_add" value="-1.2"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="500" tags="buffLacerationBleedingStatus,buffInjuryConcussion,buffFatigued,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffDeepLaceration,buffLaceration,buffInfectionCatch,buffInfectionMain,buffInfection01Untreated,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingOne,buffInjuryBleedingTwo,buffInjuryBleeding,buffBurningZombie,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffBurningMolotov,buffIsOnFire,buffBurningWeapon,buffShocked" />
+			</effect_group>
+		</buff>	
+	</append>
+
+</configs>
